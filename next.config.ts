@@ -4,4 +4,11 @@ const nextConfig: NextConfig = {
   /* config options here */
 };
 
+module.exports = {
+  images: {
+    domains: ['tailwindui.com', 'images.unsplash.com'],
+
+  },
+}
+
 export default nextConfig;
