@@ -2,3 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: theme('colors.light');
+}
+
+.clip-rectangle {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header_text {
+    font-size: 10rem;
+    color: theme('colors.dark');
+    text-align: center;
+    margin-top: 1rem;
+    position: relative; /* Necessary for animation */
+    opacity: 0; /* Hidden initially */
+    transform: translateX(0); /* Default position */
+    transition: opacity 0.3s ease-in-out;
+}
+
+#first_text {
+    @apply header_text;
+    animation: slideInLeft 1.5s forwards, shake 1s infinite 1.5s;
+}
+
+#second_text {
+    @apply header_text;
+    animation: slideInRight 1.5s forwards, shake 1s infinite 1.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Keyframes for sliding in from the left */
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%); /* Start off-screen */
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0); /* End at normal position */
+      opacity: 1;
+    }
+  }
+  
+  /* Keyframes for sliding in from the right */
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%); /* Start off-screen */
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0); /* End at normal position */
+      opacity: 1;
+    }
+  }
