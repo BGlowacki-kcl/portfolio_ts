@@ -47,7 +47,7 @@ export default function App() {
         <div ref={experienceRef} id="experience" className="p-7 overflow-hidden">
           <Experience ContactRef={contactRef} />
         </div>
-        <div ref={contactRef} id="contact" className="section">
+        <div ref={contactRef} id="contact" className="p-10">
           <Contact />
         </div>
       </div>

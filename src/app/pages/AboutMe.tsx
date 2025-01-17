@@ -47,9 +47,14 @@ const AboutMe: React.FC<AboutMeProps> = ({ProjectsRef}) => {
         <div className='flex h-full w-5/12'>
           <img src='profile_img.jpeg' alt='profile' className='rounded-full w-1/2 m-auto shadow-2xl border-2 border-dark'/>
         </div>
-        <div className='h-full w-6/12 ml-auto mr-auto flex items-center justify-center text-dark text-2xl'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </div>
+        <div className='flex flex-col justify-center items-center h-full w-1/2'>
+          <div className='w-full ml-auto mr-auto flex items-center justify-center text-dark text-2xl'>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <div className="animate-bounce flex mt-8 h-10 w-20 rounded-md items-center justify-center bg-secondary text-dark border border-spacing-0 border-black">
+            <a href='resume.pdf' target='_blank'>Resume</a>
+          </div>
+        </div>     
       </div>
       <button 
         className="absolute bottom-6 text-black px-6 py-3 rounded-lg shadow-md hover:bg-secondary focus:outline-none animate-pulse"
