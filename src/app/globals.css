@@ -107,6 +107,7 @@ body, html {
 
 .exp_animate {
   animation: exp_scroll 5s forwards;
+  
 }
 
 @keyframes exp_scroll {
@@ -122,4 +123,77 @@ body, html {
     opacity: 1;
     transform: translateX(100px);
   }
+}
+
+@font-face {
+  font-family: "RubikVinyl";
+  src: url('/fonts/RubikVinyl-Regular.ttf') format('trueType');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  font-family: 'RubikVinyl';
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(0, -10px) scale(1.1);
+  }
+  66% {
+    transform: translate(0, 10px) scale(0.9);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 3s ease-in-out infinite;
+}
+
+.fluid-blob {
+  position: relative;
+  overflow: hidden;
+}
+
+.fluid-blob::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(255,255,255,0.1) 0%,
+    transparent 50%
+  );
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) scale(1);
+    left: 100%;
+    top: 50%;
+  }
+  25% {
+    transform: translate(-25%, -25%) scale(1.2);
+  }
+  50% {
+    transform: translate(-50%, 0) scale(1);
+  }
+  75% {
+    transform: translate(-75%, 25%) scale(0.8);
+  }
+  100% {
+    transform: translate(-100%, 0) scale(1);
+    left: 0;
+    top: 50%;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.6; }
 }

@@ -2,15 +2,15 @@
 
 import React, { useEffect } from 'react'
 import StarrySky from '../components/Starback'
-import { Rubik_Vinyl } from 'next/font/google';
+// import { Rubik_Vinyl } from 'next/font/google';
 import { useRef } from 'react';
 import KeyboardDoubleArrowDownOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowDownOutlined';
 import Project from '../components/Project';
 
-const rubikVinyl = Rubik_Vinyl({
-  subsets: ['latin'], // Choose the desired subsets, you can add others like 'latin-ext' if needed
-  weight: '400', // Choose the weights you want
-});
+// const rubikVinyl = Rubik_Vinyl({
+//   subsets: ['latin'], // Choose the desired subsets, you can add others like 'latin-ext' if needed
+//   weight: '400', // Choose the weights you want
+// });
 
 interface HomeProps {
   AboutMeRef: React.RefObject<HTMLDivElement>;
@@ -55,7 +55,7 @@ const Home: React.FC<HomeProps> = ({AboutMeRef}) => {
     <div>
       <StarrySky starCount={100}/>
 
-      <div className={`${rubikVinyl.className} relative z-20 flex flex-col items-center justify-center h-screen w-screen`}>
+      <div className='header relative z-20 flex flex-col items-center justify-center h-screen w-screen'>
         <div id="first_text" >Who is...</div>
         <div id="second_text" >Bartosz?</div>
         <button 
