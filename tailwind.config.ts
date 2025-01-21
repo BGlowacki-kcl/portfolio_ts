@@ -15,6 +15,14 @@ export default {
         light: "#FAF6E3",
         primary: "#B59F78",
         secondary: "#D8DBBD",
+        black: "#000000",
+        white: '#ffffff',
+      },
+      animation: {
+        'bounce': 'bounce 1s infinite',
+      },
+      backgroundImage: {
+        'grid-dark': 'linear-gradient(to right, #00000010 1px, transparent 1px), linear-gradient(to bottom, #00000010 1px, transparent 1px)',
       },
     },
   },

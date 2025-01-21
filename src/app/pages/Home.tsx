@@ -5,8 +5,6 @@ import StarrySky from '../components/Starback'
 // import { Rubik_Vinyl } from 'next/font/google';
 import { useRef } from 'react';
 import KeyboardDoubleArrowDownOutlinedIcon from '@mui/icons-material/KeyboardDoubleArrowDownOutlined';
-import Project from '../components/Project';
-
 // const rubikVinyl = Rubik_Vinyl({
 //   subsets: ['latin'], // Choose the desired subsets, you can add others like 'latin-ext' if needed
 //   weight: '400', // Choose the weights you want
