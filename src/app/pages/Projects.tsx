@@ -15,7 +15,7 @@ const Projects: React.FC<ProjectsProps> = ({ExperienceRef}) => {
 
   const projects = [
     {
-      title: "Airport Management app",
+      title: "Airport Management",
       text: "Python Django web application that helps airlines and airports manage their operations. It includes features like flight scheduling, task management and ticket purchase. It contains multiple database models and relationships.",
       image: "/home-bg.jpeg",
       link: "https://airport-kgl3.onrender.com"
@@ -27,30 +27,36 @@ const Projects: React.FC<ProjectsProps> = ({ExperienceRef}) => {
       link: "https://teameland.pythonanywhere.com/"
     },
     {
-      title: "Airport Management app",
-      text: "Python Django web application that helps airlines and airports manage their operations. It includes features like flight scheduling, task management and ticket purchase. It contains multiple database models and relationships.",
-      image: "https://via.placeholder.com/150",
-      link: "https://www.google.com"
+      title: "Newsify AI",
+      text: "Newsify AI is a chatbot application that uses RAG for giving you the latest information from any topic you want. Leveraging Llama 3.1 model its long-term memory allows for more sophisticated answers.",
+      image: "/news.png",
+      link: "https://newsify-ai-jvev.vercel.app/"
     },
     {
-      title: "Airport Management app",
-      text: "Python Django web application that helps airlines and airports manage their operations. It includes features like flight scheduling, task management and ticket purchase. It contains multiple database models and relationships.",
-      image: "https://via.placeholder.com/150",
-      link: "https://www.google.com"
+      title: "Inventory Management",
+      text: "Simple and fast NextJS app that helps quickly add new items, remove items or change the quantity of items in the inventory. It consists of searching functionality, anonymous authentication and a simple dataase",
+      image: "/invent.png",
+      link: "https://inventory-nextjs.vercel.app/"
     },
     {
-      title: "Airport Management app",
-      text: "Python Django web application that helps airlines and airports manage their operations. It includes features like flight scheduling, task management and ticket purchase. It contains multiple database models and relationships.",
-      image: "https://via.placeholder.com/150",
-      link: "https://www.google.com"
+      title: "Penguins Clusters",
+      text: "Data analysis on penguins with done with pandas and matplotlib Python libraries. Algorithm used for clustering is KMeans and the elbow method along with silhouette score was utilized to find the best parameter K.",
+      image: "/penguins.png",
+      link: "https://github.com/BGlowacki-kcl/penguins-cluster/blob/main/penguins.ipynb"
     },
     {
-      title: "Airport Management app",
-      text: "Python Django web application that helps airlines and airports manage their operations. It includes features like flight scheduling, task management and ticket purchase. It contains multiple database models and relationships.",
-      image: "https://via.placeholder.com/150",
-      link: "https://www.google.com"
+      title: "Data Structures in Java",
+      text: "Github repository withthe most important data structures implemented from stratch in Java. It includes linked lists, array lists, sorting algorithms, queues, stacks, heaps, hash maps and more",
+      image: "/java.jpg",
+      link: "https://github.com/BGlowacki-kcl/Data-structures"
     },
-    // ... rest of your projects
+    {
+      title: "MERN store",
+      text: "BLAblabla",
+      image: "",
+      link: "https://mern-store-basic-1.onrender.com/"
+    },
+    // coursework_3 (cells), titanic_KNN
   ];
 
   return (
