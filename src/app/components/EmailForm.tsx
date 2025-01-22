@@ -1,4 +1,4 @@
-import React, { useState, FormEvent } from 'react';
+import React, { useState } from 'react';
 import { Send } from 'lucide-react';
 import Alert from '@mui/material/Alert';
 
@@ -27,7 +27,7 @@ const EmailForm = () => {
         throw new Error('Failed to send');
       }
     } catch (error) {
-      setStatus('error');
+      setStatus('error: ' + error);
     }
 
     setTimeout(() => setStatus(''), 3000);

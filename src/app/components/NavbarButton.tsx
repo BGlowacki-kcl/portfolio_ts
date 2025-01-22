@@ -2,13 +2,11 @@ import React from 'react'
 
 interface NavbarButton {
     label: string;
-    to: string;
     activeItem: string;
-    setActiveItem: React.Dispatch<React.SetStateAction<string>>;
     onClick: () => void;
 }
 
-const NavbarButton: React.FC<NavbarButton> = ({ label, to, activeItem, setActiveItem, onClick }) => {
+const NavbarButton: React.FC<NavbarButton> = ({ label, activeItem, onClick }) => {
     const isActive = activeItem === label;
   
     return (
