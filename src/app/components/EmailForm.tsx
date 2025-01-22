@@ -34,7 +34,7 @@ const EmailForm = () => {
   };
 
   return (
-    <div className="w-full max-w-xl mx-auto p-6">
+    <div className="relative w-full max-w-xl mx-auto p-6 z-30">
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="space-y-4">
           <div>
