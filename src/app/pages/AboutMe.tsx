@@ -55,11 +55,11 @@ const AboutMe: React.FC<AboutMeProps> = ({ProjectsRef}) => {
           Hi, I’m Bartosz, a Software Engineer from Poland who loves solving problems and thinking strategically—skills honed through years of playing competitive chess. I’m passionate about creating, whether it’s through coding, building cool web apps, or exploring new AI technologies. When I’m not programming, you’ll find me competing in chess tournaments, enjoying a good logic puzzle, or learning something new.
           </div>
           <div className='flex flex-row'>
-            <div className="animate-bounce flex mt-8 h-10 w-20 rounded-md items-center justify-center bg-secondary text-dark border border-spacing-0 border-black">
+            <div className="animate-bounce flex mt-8 mr-6 h-10 w-20 rounded-md items-center justify-center bg-secondary text-dark border border-spacing-0 border-black">
               <a href='resume.pdf' target='_blank'>Resume</a>
             </div>
-            <a className='text-7xl' href="https://github.com/BGlowacki-kcl" target="_blank" ><GitHubIcon /></a>
-            <a className="text-7xl" href="https://www.linkedin.com/in/bartosz-glowacki-kcl/" target="_blank" ><LinkedInIcon /></a>
+            <a className='mt-8 animate-bounce ml-6 mr-6' href="https://github.com/BGlowacki-kcl" target="_blank" ><GitHubIcon fontSize='large' /></a>
+            <a className="mt-8 animate-bounce ml-6 mr-6" href="https://www.linkedin.com/in/bartosz-glowacki-kcl/" target="_blank" ><LinkedInIcon fontSize='large' /></a>
           </div>
         </div>     
         

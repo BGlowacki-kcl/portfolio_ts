@@ -51,12 +51,18 @@ const Projects: React.FC<ProjectsProps> = ({ExperienceRef}) => {
       link: "https://github.com/BGlowacki-kcl/Data-structures"
     },
     {
-      title: "MERN store",
-      text: "BLAblabla",
-      image: "",
+      title: "Titanic survival prediction",
+      text: "Machine Learning project that uses K-nearest neighbours algorithm to predict whether a passenger survived the Titanic disaster. It uses the famous Titanic dataset from Kaggle.",
+      image: "/titanic.jpeg",
       link: "https://mern-store-basic-1.onrender.com/"
     },
-    // coursework_3 (cells), titanic_KNN
+    {
+      title: "JavaFX game of life",
+      text: "JavaFX implementation of Conway's Game of Life. It includes features like multiple cells kinds, different rules for each cell, and a simple GUI for manipulating the board.",
+      image: "/cells.png",
+      link: "https://github.com/BGlowacki-kcl/Coursework_3"
+    },
+    // coursework_3 (cells)
   ];
 
   return (
