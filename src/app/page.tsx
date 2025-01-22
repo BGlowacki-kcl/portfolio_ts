@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
 import { useRef, useState, useEffect } from "react";
+import Head from 'next/head';
 
 export default function App() {
   const homeRef = useRef<HTMLDivElement>(null);
@@ -74,6 +75,9 @@ export default function App() {
   
   return (
     <div>
+      <Head>
+        <title>Bartosz Glowacki</title>
+      </Head>
       <Navbar 
         sections={sections}
         activeItem={activeItem}
