@@ -60,8 +60,8 @@ const ExperienceText: React.FC<ExperienceTextProps> = ({title, skills, descripti
         willChange: 'transform, opacity'
       }}
     >
-        <Typography className='font-bold'>{title}</Typography>
-        <Typography className="ml-3 font-mono">{skills}</Typography>
+        <Typography className='font-bold' fontSize={20}>{title}</Typography>
+        <Typography className="ml-3 font-mono mb-2" fontSize={18} >{skills}</Typography>
         <Typography className="ml-3">{description}</Typography>
     </div>
   )
