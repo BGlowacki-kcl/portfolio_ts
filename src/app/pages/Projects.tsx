@@ -18,7 +18,6 @@ const Projects: React.FC<ProjectsProps> = ({ExperienceRef}) => {
       title: "Airport Management",
       text: "Python Django web application that helps airlines and airports manage their operations. It includes features like flight scheduling, task management and ticket purchase. It contains multiple database models and relationships.",
       image: "/home-bg.jpeg",
-      link: "https://airport-kgl3.onrender.com"
     },
     {
       title: "Connecting Tutors with Students",
